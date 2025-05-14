@@ -1,0 +1,20 @@
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de logs
+*.log
+
+# Archivos de base de datos locales (si no deseas subirlos)
+*.sql
+
+# Archivos sensibles de configuración
+.env
+
+# Carpeta de respaldos o archivos temporales
+backup/
+temp/
+
+# Configuración de editores (opcional)
+.vscode/
+*.code-workspace
