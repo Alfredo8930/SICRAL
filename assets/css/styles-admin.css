@@ -1,0 +1,157 @@
+body {
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: #8b2042;
+    color: white;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 250px;
+    box-shadow: 3px 0 5px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    transform: translateY(-100%);
+    opacity: 0;
+    z-index: 100;
+}
+
+.animate-slide-down {
+    animation: slideDown 0.5s ease forwards;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: all 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: rgba(255,255,255,0.1);
+    
+}
+
+.sidebar .active {
+    background-color: rgba(255,255,255,0.2);
+    border-left: 4px solid white;
+}
+
+.sidebar .logo-container {
+    padding: 6px;
+    text-align: center;
+    background-color: #6b1835;
+}
+
+.sidebar .logo {
+    max-width: 30%;
+}
+
+.sidebar .nav-item {
+    margin-bottom: 5px;
+}
+
+.sidebar .submenu {
+    padding-left: 20px;
+    display: none;
+}
+
+.sidebar .nav-link[aria-expanded="true"] .dropdown-indicator:before {
+    content: "\f078";
+}
+
+.sidebar .nav-link .dropdown-indicator:before {
+    content: "\f054";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    float: right;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.header {
+    background-color: #0d3b34;
+    color: white;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.section-title {
+    border-bottom: 2px solid #0d3b34;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #0d3b34;
+    border-color: #0d3b34;
+}
+
+.btn-primary:hover {
+    background-color: #0a2e29;
+    border-color: #0a2e29;
+}
+
+.btn-secondary {
+    background-color: #6b513d;
+    border-color: #6b513d;
+}
+
+.btn-secondary:hover {
+    background-color: #5a4433;
+    border-color: #5a4433;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.table th {
+    background-color: #f0f0f0;
+}
+
+.action-buttons .btn {
+    margin-right: 5px;
+}
+
+.user-welcome {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.stats-cards .card {
+    border-radius: 10px;
+    border-left: 4px solid #0d3b34;
+}
+
+.stats-icon {
+    font-size: 2rem;
+    color: #0d3b34;
+}
+
